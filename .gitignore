@@ -1,0 +1,45 @@
+# ====================== Java / Maven ===========================
+
+/target/
+*.class
+*.jar
+*.war
+*.ear
+
+# ==================== IDE / IntelliJ / Eclipse ==================
+
+.idea/
+*.iml
+*.ipr
+*.iws
+.settings/
+.project
+.classpath
+.vscode/
+
+# ================== Config / Sensitive files ====================
+
+
+src/test/resources/config/config.properties
+
+
+# ================== Reports and Screenshots =====================
+
+allure-results/
+test-output/
+reports/
+screenshots/
+target/surefire-reports/
+target/cucumber-report/
+target/Negative_Scenarios_cucumber-report/
+
+# ============================ Logs =============================
+
+logs/
+*.log
+
+# ======================== OS / System ==========================
+
+.DS_Store
+Thumbs.db
+*.swp

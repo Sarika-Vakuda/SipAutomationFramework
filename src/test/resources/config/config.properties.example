@@ -1,0 +1,85 @@
+#============================EXECUTION DETAILS=======================
+
+executor.name=Your Name
+executor.email=your_email@example.com
+executor.email.password=YOUR_EMAIL_APP_PASSWORD
+
+#For CI execution
+#executor.email.password=${EMAIL_APP_PASSWORD}
+#===================EMAIL RECIPIENTS==============================
+
+email.qa.recipients=qa1@example.com,qa2@example.com
+email.manager.recipients=manager@example.com
+
+#========================== GENERAL =========================
+#Local browsers
+browser=chrome
+#browser=edge
+#browser=firefox
+
+# Remote WebDriver URL (Selenium Grid / Selenoid)
+#remote.url=REMOTE_URL
+
+# Retry logic
+retry.count=2
+#================== ENVIRONMENTS ==========================
+
+#env=qa
+#env=uat
+env=prod
+
+#========================== URLS ========================
+env.qa.url=https://qa.example.com/
+env.uat.url=https://uat.example.com/
+env.prod.url=https://prod.example.com/
+
+#================== PASSWORDS =========================
+login.qa.password=YOUR_QA_PASSWORD
+login.uat.password=YOUR_UAT_PASSWORD
+login.prod.password=https://new-cp.gfau.augmont.com/
+
+#================== USER 1 ===================
+user1.mobileNum=XXXXXXXXXX
+user1.pannumber=XXXXXXXXXX
+user1.email=your_email@example.com
+
+#================== USER 2 ===================
+user2.mobileNum=XXXXXXXXXX
+user2.pannumber=XXXXXXXXXX
+user2.email=your_email@example.com
+# ================== NEW USER 1=====================
+
+newUser1.mobileNum=XXXXXXXXXX
+newUser1.pannumber=XXXXXXXXXX
+newUser1.email=your_email@example.com
+
+
+# ================== NEW USER 2=====================
+
+newUser2.mobileNum=XXXXXXXXXX
+newUser2.pannumber=XXXXXXXXXX
+newUser2.email=your_email@example.com
+
+#================== BANK DETAILS User1 ==============
+user1.bankName=BANK_NAME
+user1.accountHolderName=ACCOUNT_HOLDER_NAME
+user1.accountNum=XXXXXXXXXXXX
+user1.ifscCode=IFSC_CODE
+
+#================== BANK DETAILS User2 ==============
+user2.bankName=BANK_NAME
+user2.accountHolderName=ACCOUNT_HOLDER_NAME
+user2.accountNum=XXXXXXXXXXXX
+user2.ifscCode=IFSC_CODE
+# ================== BANK DETAILS NewUser1 ============
+
+newUser1.bankName=BANK_NAME
+newUser1.accountHolderName=ACCOUNT_HOLDER_NAME
+newUser1.accountNum=XXXXXXXXXXXX
+newUser1.ifscCode=IFSC_CODE
+# ================== BANK DETAILS NewUser2 ============
+
+newUser2.bankName=BANK_NAME
+newUser2.accountHolderName=ACCOUNT_HOLDER_NAME
+newUser2.accountNum=XXXXXXXXXXXX
+newUser2.ifscCode=IFSC_CODE

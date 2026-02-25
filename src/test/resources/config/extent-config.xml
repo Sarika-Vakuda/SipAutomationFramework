@@ -1,0 +1,10 @@
+
+<extentreports>
+    <configuration>
+        <encoding>utf-8</encoding>
+        <protocol>https</protocol>
+        <theme>STANDARD</theme>
+        <documentTitle>Automation Report</documentTitle>
+        <reportName>Augmount Automation Execution Report</reportName>
+    </configuration>
+</extentreports>

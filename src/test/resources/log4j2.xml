@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+
+    <!-- ======================
+         Appenders
+    ====================== -->
+    <!-- Console Appender -->
+    <Appenders>
+        <Console name="Console" target="SYSTEM_OUT">
+            <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss} %-5p [%c{1}] - %m%n"/>
+        </Console>
+
+        <!-- File Appender for all framework logs -->
+        <File name="FileLogger" fileName="logs/framework.log" append="true" createOnDemand="true" >
+            <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss} %-5p [%c{1}] - %m%n"/>
+        </File>
+
+        <!-- Separate file for Page Objects logs (optional) -->
+        <File name="POMLogger" fileName="logs/pom.log" append="true" createOnDemand="true" >
+        
+            <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss} %-5p [%c{1}] - %m%n"/>
+        </File>
+
+        <!-- Separate file for Step Definitions logs (optional) -->
+        <File name="StepLogger" fileName="logs/steps.log" append="true" createOnDemand="true" >
+            <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss} %-5p [%c{1}] - %m%n"/>
+        </File>
+		<File name="HooksLogger" fileName="logs/hooks.log" append="true" createOnDemand="true" >
+            <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss} %-5p [%c{1}] - %m%n"/>
+        </File>
+    </Appenders>
+
+    <!-- ======================
+         Loggers
+    ====================== -->
+
+    <!-- Root logger -->
+    <Loggers>
+        <Root level="info">
+            <AppenderRef ref="Console"/>
+            <AppenderRef ref="FileLogger"/>
+        </Root>
+
+        <!-- Logger for Page Object classes -->
+        <Logger name="pages" level="debug" additivity="false">
+           	<AppenderRef ref="Console"/>
+            <AppenderRef ref="POMLogger"/>
+        </Logger>
+
+        <!-- Logger for Step Definitions -->
+        <Logger name="stepdefinitions" level="debug" additivity="false">
+            <AppenderRef ref="Console"/>
+            <AppenderRef ref="StepLogger"/>
+        </Logger>
+
+        <!-- Logger for Hooks -->
+        <Logger name="hooks" level="info" additivity="false">
+           	<AppenderRef ref="Console"/>
+            <AppenderRef ref="HooksLogger"/>
+        </Logger>
+
+    </Loggers>
+
+</Configuration>
